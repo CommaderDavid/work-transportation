@@ -15,20 +15,28 @@
       </div>
       <form id="trans_survey">
         <div class="form-group">
-          <p><b>Which form of transportation have you used to get to work over the past Year? (Check all that apply):</b></p>
+          <p><b>Which form of transportation have you used to get to work over the past Year? (<i>Check all that apply</i>):</b></p>
           <input type="checkbox" name="work-trans" value="bike"> Riding a bike.<br>
           <input type="checkbox" name="work-trans" value="car"> Driving a car.<br>
           <input type="checkbox" name="work-trans" value="bus"> Riding a bus.<br>
           <input type="checkbox" name="work-trans" value="taxi"> Taking a taxi.<br>
           <input type="checkbox" name="work-trans" value="uber"> Riding through uber.<br>
         </div>
-        <!-- <div class="form-group">
-          <input type="checkbox" name="work-trans" value="">  <br>
-        </div> -->
+        <div class="form-group">
+          <p><b>Which form of transportation have you used to travel to non-work or recreational activities over the past Year? (<i>Check all that apply</i>):</b></p>
+          <input type="checkbox" name="fun-trans" value="motorcycle"> Driving a motorcycle.<br>
+          <input type="checkbox" name="fun-trans" value="bus"> Riding a bus.<br>
+          <input type="checkbox" name="fun-trans" value="taxi"> Riding a taxi.<br>
+          <input type="checkbox" name="fun-trans" value="uber"> Using a rideshare service like Uber.<br>
+          <input type="checkbox" name="fun-trans" value="other"> Another form of transport not listed.<br>
+        </div>
         <button type="submit" class="btn btn-danger">Submit Survey</button>
       </form>
       <span id="work_result">
-        <p><b>You have used the following transportation to get to work over the past year:</b></p>
+        <p><b>You have used the following transportations to get to work over the past year:</b></p>
+      </span>
+      <span id="fun_result">
+        <p><b>You have used the following transportations to get to work over the past year:</b></p>
       </span>
     </div>
   </body>
